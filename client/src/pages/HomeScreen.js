@@ -1,9 +1,9 @@
 import React from "react";
-import Carousel from "./Carousel";
-import Hero from "./Hero";
+import Carousel from "../Carousel";
+import Hero from "../Hero";
 import "./HomeScreen.css";
-import Navbar from "./Navbar";
-import requests from "./Requests";
+import Navbar from "../Navbar";
+import requests from "../Requests";
 
 const HomeScreen = () => {
   return (

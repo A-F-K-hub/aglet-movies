@@ -46,7 +46,7 @@ function Hero() {
           </button>
           <button className="hero-button">
             <RiPlayListAddLine className="hero-icon" />
-            My List
+            My Favourites
           </button>
         </div>
         <h1 className="hero-description">{truncate(movie?.overview, 150)}</h1>
