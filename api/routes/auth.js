@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
+const db = require("mongoose");
 
 //REGISTER
 router.post("/register", async (req, res) => {
@@ -14,9 +15,12 @@ router.post("/register", async (req, res) => {
       password: hashedPass,
     });
 
+    console.log({newUser})
+
     const user = await newUser.save();
     res.status(200).json(user);
   } catch (err) {
+    console.log({registerError: err});
     res.status(500).json(err);
   }
 });
@@ -31,7 +35,7 @@ router.post("/login", async (req, res) => {
     !validated && res.status(400).json("Wrong password");
 
     const { password, ...others } = user._doc;
-    res.status(200).json(others);
+    return res.status(200).json(user);
   } catch (err) {
     res.status(500);
   }

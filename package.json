@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moviedb": "^0.2.12"
+  }
+}

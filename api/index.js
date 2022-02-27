@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
+// const favoritesRoute =  require("./routes/addFovorite");
 // const multer = require("multer");
 // const path = require("path");
 
@@ -34,6 +35,6 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 
 console.log("Amanda");
-app.listen("5000", () => {
+app.listen("4000", () => {
   console.log("listening on 5000");
 });
