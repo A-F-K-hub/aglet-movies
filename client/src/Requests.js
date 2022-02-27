@@ -1,6 +1,7 @@
 const API_KEY = "5d1f8fbb75ee5c3d1042526895f94b51";
 
 const requests = {
+  // search: ``
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   fetchAgletOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
   fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,

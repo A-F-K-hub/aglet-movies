@@ -1,0 +1,25 @@
+.autoComplete {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .carousel-posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+
+  .carousel-poster {
+    max-height: 200px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 450ms;
+}
+
+.carousel-poster:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    opacity: 1;
+}

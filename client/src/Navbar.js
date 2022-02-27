@@ -24,6 +24,7 @@ function Navbar() {
     window.addEventListener("scroll", transitionNavBar);
     return () => window.removeEventListener("scroll", transitionNavBar);
   }, []);
+  
 
   return (
     <div className={`nav ${show && "nav-black"}`}>
