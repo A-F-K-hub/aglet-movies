@@ -31,13 +31,13 @@ const HomeScreen = () => {
   }
 
 
-  const movies =[{id: 144, name:'Movie 1'}, {id: 2327, name: 'movie2'}, {id: 2244, name: 'movie3'}, {id: 3421, name: 'movie4'}] // Your list of movies from api call
-  const favourites = [2327, 2244, 353]; // currentUser.favourites
+  // const movies =[{id: 144, name:'Movie 1'}, {id: 2327, name: 'movie2'}, {id: 2244, name: 'movie3'}, {id: 3421, name: 'movie4'}] // Your list of movies from api call
+  // const favourites = [2327, 2244, 353]; // currentUser.favourites
 
 
-  const filters = movies.filter(movie=>{ //List of favourite movies
-    return favourites.includes(movie.id)
-  })
+  // const filters = movies.filter(movie=>{ //List of favourite movies
+  //   return favourites.includes(movie.id)
+  // })
 
   console.log({filters})
 
