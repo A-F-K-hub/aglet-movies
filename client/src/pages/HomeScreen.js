@@ -39,7 +39,6 @@ const HomeScreen = () => {
   //   return favourites.includes(movie.id)
   // })
 
-  console.log({filters})
 
 
   const addMovieToFavorites = async (id) =>{
@@ -82,7 +81,6 @@ const HomeScreen = () => {
    setSearchText(event.target.value);
    debounce(event.target.value);
  }
-
 const renderListPfMovies =()=>{
   return <div className="carousel-posters">
     {moviesResults.map(movie=>{

@@ -35,6 +35,6 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 
 console.log("Amanda");
-app.listen("4000", () => {
+app.listen("5000", () => {
   console.log("listening on 5000");
 });
