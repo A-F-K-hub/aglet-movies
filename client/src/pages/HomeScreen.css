@@ -1,0 +1,65 @@
+.favourites {
+  font-weight:400;
+  background-color: rgb(95, 83, 83);
+}
+.autoComplete {
+  flex: 5;
+  width: 40vw;
+  height: 20vh;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .searchIcon {
+    font-size: 24px;
+    color: gray;
+    margin-right: 10px;
+  }
+
+  .carousel-posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.carousel-posters > div > button {
+  margin-top: 10px;
+  font-weight: 200;
+  padding: 10px;
+  border-radius: 30px;
+  border-width: 2px;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel-posters > div > button:hover {
+  background-color: rgb(43, 42, 41);
+  color: #fff;
+}
+
+
+  .carousel-poster {
+    max-height: 200px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 450ms;
+}
+
+.carousel-poster:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    opacity: 1;
+}
